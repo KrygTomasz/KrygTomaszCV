@@ -10,6 +10,6 @@ import UIKit
 
 class GlobalValues {
     
-    static let mediumCornerRadius: CGFloat = 5.0
+    static let mediumCornerRadius: CGFloat = 10.0
     
 }

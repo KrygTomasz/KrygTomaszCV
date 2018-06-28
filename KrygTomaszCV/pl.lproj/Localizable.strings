@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  KrygTomaszCV
+
+  Created by Kryg Tomasz on 28.06.2018.
+  Copyright © 2018 Kryg Tomasz. All rights reserved.
+*/
+
+"appOwner" = "Tomasz Kryg";
+"aboutMe" = "O mnie";
+"education" = "Edukacja";
+"experience" = "Doświadczenie";
+"skills" = "Umiejętności";
+"interests" = "Zainteresowania";
+"ios" = "iOS";
+"macos" = "MacOS";
+"xcode" = "Xcode";
+"sourcetree" = "SourceTree";
+"swift" = "Swift";
+"objective-c" = "Objective-C";
+"firebase" = "Firebase";
+"json" = "JSON";
+"scrum" = "Scrum";

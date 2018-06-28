@@ -19,10 +19,17 @@ class SkillsVC: UIViewController {
         }
     }
     
+    var skillsVM: SkillsVM = SkillsVMImpl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareNavigationBar(withTitle: "Umiejętności")
+        prepareNavigationBar(withTitle: "skills".localize())
         self.view.setGradientColor(topColor: .secondaryColor, bottomColor: .mainColor)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        skillsVM.canAnimate = false
     }
     
     static func getInstance() -> SkillsVC {
@@ -35,16 +42,17 @@ class SkillsVC: UIViewController {
 extension SkillsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return skillsVM.numberOfSections
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return skillsVM.numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let skillCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SkillCVCell", for: indexPath) as? SkillCVCell else { return UICollectionViewCell() }
-        skillCVCell.setPieChart()
+        let skillCellVM = skillsVM.getCellVM(for: indexPath.row)
+        skillCVCell.prepare(using: skillCellVM)
         return skillCVCell
     }
     

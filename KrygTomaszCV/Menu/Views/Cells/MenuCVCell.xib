@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,14 +28,14 @@
                                 <rect key="frame" x="16" y="16" width="203" height="260"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TXT-ez-24i">
-                                        <rect key="frame" x="12" y="0.0" width="179" height="178.5"/>
+                                        <rect key="frame" x="24" y="0.0" width="155" height="155"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="TXT-ez-24i" secondAttribute="height" multiplier="1:1" id="No9-qp-vq7"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-em-yfv">
-                                        <rect key="frame" x="80.5" y="178.5" width="42" height="81.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="79.5" y="155" width="44.5" height="105"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -46,6 +47,7 @@
                         <constraints>
                             <constraint firstItem="tu2-hM-9HV" firstAttribute="leading" secondItem="Dgj-tn-Wsp" secondAttribute="leading" constant="16" id="4lO-Sj-2C8"/>
                             <constraint firstAttribute="bottom" secondItem="tu2-hM-9HV" secondAttribute="bottom" constant="16" id="YkD-BC-aob"/>
+                            <constraint firstItem="TXT-ez-24i" firstAttribute="width" secondItem="Dgj-tn-Wsp" secondAttribute="width" multiplier="0.66" id="dd8-pJ-WIH"/>
                             <constraint firstAttribute="trailing" secondItem="tu2-hM-9HV" secondAttribute="trailing" constant="16" id="jbo-bA-IZI"/>
                             <constraint firstItem="tu2-hM-9HV" firstAttribute="top" secondItem="Dgj-tn-Wsp" secondAttribute="top" constant="16" id="rIu-3W-qfJ"/>
                         </constraints>

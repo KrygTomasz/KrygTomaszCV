@@ -25,6 +25,19 @@
 		226EC25020E43955008C6B3D /* UIViewController+Extesnions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC24F20E43955008C6B3D /* UIViewController+Extesnions.swift */; };
 		226EC25420E43B96008C6B3D /* SkillCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC25220E43B96008C6B3D /* SkillCVCell.swift */; };
 		226EC25520E43B96008C6B3D /* SkillCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226EC25320E43B96008C6B3D /* SkillCVCell.xib */; };
+		226EDD0420E5693800515B0C /* MenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD0320E5693800515B0C /* MenuVM.swift */; };
+		226EDD0620E56A8700515B0C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD0520E56A8700515B0C /* MenuItem.swift */; };
+		226EDD0920E56B4D00515B0C /* MenuItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD0820E56B4D00515B0C /* MenuItemType.swift */; };
+		226EDD0B20E56BCA00515B0C /* MenuVMImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD0A20E56BCA00515B0C /* MenuVMImpl.swift */; };
+		226EDD0D20E56F4400515B0C /* MenuCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD0C20E56F4400515B0C /* MenuCellVM.swift */; };
+		226EDD0F20E56F4C00515B0C /* MenuCellVMImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD0E20E56F4C00515B0C /* MenuCellVMImpl.swift */; };
+		226EDD1420E5791D00515B0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 226EDD1620E5791D00515B0C /* Localizable.strings */; };
+		226EDD1920E57AC600515B0C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD1820E57AC600515B0C /* String+Extensions.swift */; };
+		226EDD1B20E584F200515B0C /* SkillsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD1A20E584F200515B0C /* SkillsVM.swift */; };
+		226EDD1D20E584FC00515B0C /* SkillsVMImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD1C20E584FC00515B0C /* SkillsVMImpl.swift */; };
+		226EDD1F20E5853E00515B0C /* SkillCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD1E20E5853E00515B0C /* SkillCellVM.swift */; };
+		226EDD2120E5854600515B0C /* SkillCellVMImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD2020E5854600515B0C /* SkillCellVMImpl.swift */; };
+		226EDD2420E5858800515B0C /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EDD2320E5858800515B0C /* Skill.swift */; };
 		76D9D0FCC5F54C9DEA3A5300 /* Pods_KrygTomaszCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5D7D42A1DC7E6091F41388 /* Pods_KrygTomaszCV.framework */; };
 		7A0836D830A174C5B853A6A4 /* Pods_KrygTomaszCVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B5DB0FAB7B55F70575FB40 /* Pods_KrygTomaszCVTests.framework */; };
 		CBDC61F8884DF6F9DDA0A2D3 /* Pods_KrygTomaszCVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE07CC6B6D57C940EBAF89F /* Pods_KrygTomaszCVUITests.framework */; };
@@ -75,6 +88,22 @@
 		226EC24F20E43955008C6B3D /* UIViewController+Extesnions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extesnions.swift"; sourceTree = "<group>"; };
 		226EC25220E43B96008C6B3D /* SkillCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCVCell.swift; sourceTree = "<group>"; };
 		226EC25320E43B96008C6B3D /* SkillCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillCVCell.xib; sourceTree = "<group>"; };
+		226EDD0320E5693800515B0C /* MenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVM.swift; sourceTree = "<group>"; };
+		226EDD0520E56A8700515B0C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		226EDD0820E56B4D00515B0C /* MenuItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemType.swift; sourceTree = "<group>"; };
+		226EDD0A20E56BCA00515B0C /* MenuVMImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVMImpl.swift; sourceTree = "<group>"; };
+		226EDD0C20E56F4400515B0C /* MenuCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellVM.swift; sourceTree = "<group>"; };
+		226EDD0E20E56F4C00515B0C /* MenuCellVMImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellVMImpl.swift; sourceTree = "<group>"; };
+		226EDD1020E578AF00515B0C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		226EDD1120E578AF00515B0C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		226EDD1520E5791D00515B0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226EDD1720E5792000515B0C /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226EDD1820E57AC600515B0C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		226EDD1A20E584F200515B0C /* SkillsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsVM.swift; sourceTree = "<group>"; };
+		226EDD1C20E584FC00515B0C /* SkillsVMImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsVMImpl.swift; sourceTree = "<group>"; };
+		226EDD1E20E5853E00515B0C /* SkillCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCellVM.swift; sourceTree = "<group>"; };
+		226EDD2020E5854600515B0C /* SkillCellVMImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCellVMImpl.swift; sourceTree = "<group>"; };
+		226EDD2320E5858800515B0C /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		2AE07CC6B6D57C940EBAF89F /* Pods_KrygTomaszCVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrygTomaszCVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5365517EC37C7C4CFEB212 /* Pods-KrygTomaszCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCV/Pods-KrygTomaszCV.release.xcconfig"; sourceTree = "<group>"; };
 		777CD1A4D947EBBDE64820F3 /* Pods-KrygTomaszCVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCVTests/Pods-KrygTomaszCVTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +173,7 @@
 				226EC21220E41391008C6B3D /* LaunchScreen.storyboard */,
 				226EC21520E41391008C6B3D /* Info.plist */,
 				226EC20D20E4138E008C6B3D /* KrygTomaszCV.xcdatamodeld */,
+				226EDD1620E5791D00515B0C /* Localizable.strings */,
 			);
 			path = KrygTomaszCV;
 			sourceTree = "<group>";
@@ -171,6 +201,7 @@
 			children = (
 				226EC24620E430D2008C6B3D /* Views */,
 				226EC24720E430E6008C6B3D /* ViewModels */,
+				226EDD0720E56A8C00515B0C /* Models */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -191,6 +222,7 @@
 				226EC24220E42911008C6B3D /* UIView+Extensions.swift */,
 				226EC24420E4297F008C6B3D /* UIColor+Extensions.swift */,
 				226EC24F20E43955008C6B3D /* UIViewController+Extesnions.swift */,
+				226EDD1820E57AC600515B0C /* String+Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -208,6 +240,10 @@
 		226EC24720E430E6008C6B3D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				226EDD0320E5693800515B0C /* MenuVM.swift */,
+				226EDD0A20E56BCA00515B0C /* MenuVMImpl.swift */,
+				226EDD0C20E56F4400515B0C /* MenuCellVM.swift */,
+				226EDD0E20E56F4C00515B0C /* MenuCellVMImpl.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -215,6 +251,7 @@
 		226EC24820E438C3008C6B3D /* Skills */ = {
 			isa = PBXGroup;
 			children = (
+				226EDD2220E5857F00515B0C /* Models */,
 				226EC24A20E438DA008C6B3D /* Views */,
 				226EC24920E438D0008C6B3D /* ViewModels */,
 			);
@@ -224,6 +261,10 @@
 		226EC24920E438D0008C6B3D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				226EDD1A20E584F200515B0C /* SkillsVM.swift */,
+				226EDD1C20E584FC00515B0C /* SkillsVMImpl.swift */,
+				226EDD1E20E5853E00515B0C /* SkillCellVM.swift */,
+				226EDD2020E5854600515B0C /* SkillCellVMImpl.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -245,6 +286,23 @@
 				226EC25320E43B96008C6B3D /* SkillCVCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		226EDD0720E56A8C00515B0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				226EDD0520E56A8700515B0C /* MenuItem.swift */,
+				226EDD0820E56B4D00515B0C /* MenuItemType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		226EDD2220E5857F00515B0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				226EDD2320E5858800515B0C /* Skill.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B7721ABF77C69EDCA6A1543E /* Frameworks */ = {
@@ -365,6 +423,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 226EC1FA20E4138E008C6B3D;
 			productRefGroup = 226EC20420E4138E008C6B3D /* Products */;
@@ -386,6 +445,7 @@
 				226EC25520E43B96008C6B3D /* SkillCVCell.xib in Resources */,
 				226EC21420E41391008C6B3D /* LaunchScreen.storyboard in Resources */,
 				226EC24E20E438FB008C6B3D /* SkillsVC.xib in Resources */,
+				226EDD1420E5791D00515B0C /* Localizable.strings in Resources */,
 				226EC23D20E41883008C6B3D /* MenuCVCell.xib in Resources */,
 				226EC21120E41391008C6B3D /* Assets.xcassets in Resources */,
 				226EC20C20E4138E008C6B3D /* Main.storyboard in Resources */,
@@ -563,16 +623,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226EDD1D20E584FC00515B0C /* SkillsVMImpl.swift in Sources */,
 				226EC25420E43B96008C6B3D /* SkillCVCell.swift in Sources */,
 				226EC24320E42911008C6B3D /* UIView+Extensions.swift in Sources */,
 				226EC20920E4138E008C6B3D /* MenuVC.swift in Sources */,
 				226EC23C20E41883008C6B3D /* MenuCVCell.swift in Sources */,
+				226EDD2120E5854600515B0C /* SkillCellVMImpl.swift in Sources */,
 				226EC20F20E4138E008C6B3D /* KrygTomaszCV.xcdatamodeld in Sources */,
+				226EDD0620E56A8700515B0C /* MenuItem.swift in Sources */,
 				226EC24D20E438FB008C6B3D /* SkillsVC.swift in Sources */,
+				226EDD2420E5858800515B0C /* Skill.swift in Sources */,
 				226EC24520E4297F008C6B3D /* UIColor+Extensions.swift in Sources */,
 				226EC20720E4138E008C6B3D /* AppDelegate.swift in Sources */,
+				226EDD1F20E5853E00515B0C /* SkillCellVM.swift in Sources */,
+				226EDD0F20E56F4C00515B0C /* MenuCellVMImpl.swift in Sources */,
+				226EDD1B20E584F200515B0C /* SkillsVM.swift in Sources */,
 				226EC24020E424D4008C6B3D /* GlobalValues.swift in Sources */,
+				226EDD0920E56B4D00515B0C /* MenuItemType.swift in Sources */,
+				226EDD1920E57AC600515B0C /* String+Extensions.swift in Sources */,
+				226EDD0B20E56BCA00515B0C /* MenuVMImpl.swift in Sources */,
 				226EC25020E43955008C6B3D /* UIViewController+Extesnions.swift in Sources */,
+				226EDD0D20E56F4400515B0C /* MenuCellVM.swift in Sources */,
+				226EDD0420E5693800515B0C /* MenuVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +684,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				226EC20B20E4138E008C6B3D /* Base */,
+				226EDD1020E578AF00515B0C /* pl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -620,8 +693,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				226EC21320E41391008C6B3D /* Base */,
+				226EDD1120E578AF00515B0C /* pl */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		226EDD1620E5791D00515B0C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226EDD1520E5791D00515B0C /* en */,
+				226EDD1720E5792000515B0C /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -631,6 +714,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -691,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

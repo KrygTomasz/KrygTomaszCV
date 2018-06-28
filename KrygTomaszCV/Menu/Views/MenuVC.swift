@@ -18,9 +18,12 @@ class MenuVC: UIViewController {
             collectionView.dataSource = self
         }
     }
+    
+    let menuVM: MenuVM = MenuVMImpl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareNavigationBar(withTitle: "Tomasz Kryg")
+        prepareNavigationBar(withTitle: "appOwner".localize())
         self.view.setGradientColor(topColor: .secondaryColor, bottomColor: .mainColor)
     }
 
@@ -29,22 +32,24 @@ class MenuVC: UIViewController {
 extension MenuVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return menuVM.numberOfSections
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return menuVM.numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let menuCVCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCVCell", for: indexPath) as? MenuCVCell else { return UICollectionViewCell() }
+        let menuCellVM = menuVM.getCellVM(for: indexPath.row)
+        menuCVCell.prepare(using: menuCellVM)
         return menuCVCell
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let menuCVCell = cell as? MenuCVCell else { return }
         menuCVCell.containerView.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.3, delay: (Double(indexPath.item)/16.0), options: .curveEaseOut, animations: {
             menuCVCell.containerView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }, completion: nil)
     }
