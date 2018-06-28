@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		226EC20720E4138E008C6B3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC20620E4138E008C6B3D /* AppDelegate.swift */; };
+		226EC20920E4138E008C6B3D /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC20820E4138E008C6B3D /* MenuVC.swift */; };
+		226EC20C20E4138E008C6B3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226EC20A20E4138E008C6B3D /* Main.storyboard */; };
+		226EC20F20E4138E008C6B3D /* KrygTomaszCV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 226EC20D20E4138E008C6B3D /* KrygTomaszCV.xcdatamodeld */; };
+		226EC21120E41391008C6B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226EC21020E41391008C6B3D /* Assets.xcassets */; };
+		226EC21420E41391008C6B3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226EC21220E41391008C6B3D /* LaunchScreen.storyboard */; };
+		226EC21F20E41391008C6B3D /* KrygTomaszCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC21E20E41391008C6B3D /* KrygTomaszCVTests.swift */; };
+		226EC22A20E41391008C6B3D /* KrygTomaszCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC22920E41391008C6B3D /* KrygTomaszCVUITests.swift */; };
+		226EC23C20E41883008C6B3D /* MenuCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC23A20E41883008C6B3D /* MenuCVCell.swift */; };
+		226EC23D20E41883008C6B3D /* MenuCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226EC23B20E41883008C6B3D /* MenuCVCell.xib */; };
+		226EC24020E424D4008C6B3D /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC23F20E424D4008C6B3D /* GlobalValues.swift */; };
+		226EC24320E42911008C6B3D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC24220E42911008C6B3D /* UIView+Extensions.swift */; };
+		226EC24520E4297F008C6B3D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC24420E4297F008C6B3D /* UIColor+Extensions.swift */; };
+		226EC24D20E438FB008C6B3D /* SkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC24B20E438FB008C6B3D /* SkillsVC.swift */; };
+		226EC24E20E438FB008C6B3D /* SkillsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226EC24C20E438FB008C6B3D /* SkillsVC.xib */; };
+		226EC25020E43955008C6B3D /* UIViewController+Extesnions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC24F20E43955008C6B3D /* UIViewController+Extesnions.swift */; };
+		226EC25420E43B96008C6B3D /* SkillCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226EC25220E43B96008C6B3D /* SkillCVCell.swift */; };
+		226EC25520E43B96008C6B3D /* SkillCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226EC25320E43B96008C6B3D /* SkillCVCell.xib */; };
+		76D9D0FCC5F54C9DEA3A5300 /* Pods_KrygTomaszCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5D7D42A1DC7E6091F41388 /* Pods_KrygTomaszCV.framework */; };
+		7A0836D830A174C5B853A6A4 /* Pods_KrygTomaszCVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B5DB0FAB7B55F70575FB40 /* Pods_KrygTomaszCVTests.framework */; };
+		CBDC61F8884DF6F9DDA0A2D3 /* Pods_KrygTomaszCVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE07CC6B6D57C940EBAF89F /* Pods_KrygTomaszCVUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		226EC21B20E41391008C6B3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226EC1FB20E4138E008C6B3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226EC20220E4138E008C6B3D;
+			remoteInfo = KrygTomaszCV;
+		};
+		226EC22620E41391008C6B3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226EC1FB20E4138E008C6B3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226EC20220E4138E008C6B3D;
+			remoteInfo = KrygTomaszCV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CA37545A556CE94CDBE2671 /* Pods-KrygTomaszCVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCVUITests/Pods-KrygTomaszCVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14BE16C87E7F642338D655FD /* Pods-KrygTomaszCVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCVTests/Pods-KrygTomaszCVTests.release.xcconfig"; sourceTree = "<group>"; };
+		21D4DB2469CECB8328B20222 /* Pods-KrygTomaszCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCV/Pods-KrygTomaszCV.debug.xcconfig"; sourceTree = "<group>"; };
+		226EC20320E4138E008C6B3D /* KrygTomaszCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrygTomaszCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		226EC20620E4138E008C6B3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		226EC20820E4138E008C6B3D /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		226EC20B20E4138E008C6B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		226EC20E20E4138E008C6B3D /* KrygTomaszCV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KrygTomaszCV.xcdatamodel; sourceTree = "<group>"; };
+		226EC21020E41391008C6B3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		226EC21320E41391008C6B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		226EC21520E41391008C6B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226EC21A20E41391008C6B3D /* KrygTomaszCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrygTomaszCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		226EC21E20E41391008C6B3D /* KrygTomaszCVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrygTomaszCVTests.swift; sourceTree = "<group>"; };
+		226EC22020E41391008C6B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226EC22520E41391008C6B3D /* KrygTomaszCVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrygTomaszCVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		226EC22920E41391008C6B3D /* KrygTomaszCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrygTomaszCVUITests.swift; sourceTree = "<group>"; };
+		226EC22B20E41391008C6B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226EC23A20E41883008C6B3D /* MenuCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCVCell.swift; sourceTree = "<group>"; };
+		226EC23B20E41883008C6B3D /* MenuCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCVCell.xib; sourceTree = "<group>"; };
+		226EC23F20E424D4008C6B3D /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
+		226EC24220E42911008C6B3D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		226EC24420E4297F008C6B3D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		226EC24B20E438FB008C6B3D /* SkillsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsVC.swift; sourceTree = "<group>"; };
+		226EC24C20E438FB008C6B3D /* SkillsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillsVC.xib; sourceTree = "<group>"; };
+		226EC24F20E43955008C6B3D /* UIViewController+Extesnions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extesnions.swift"; sourceTree = "<group>"; };
+		226EC25220E43B96008C6B3D /* SkillCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCVCell.swift; sourceTree = "<group>"; };
+		226EC25320E43B96008C6B3D /* SkillCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillCVCell.xib; sourceTree = "<group>"; };
+		2AE07CC6B6D57C940EBAF89F /* Pods_KrygTomaszCVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrygTomaszCVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5365517EC37C7C4CFEB212 /* Pods-KrygTomaszCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCV/Pods-KrygTomaszCV.release.xcconfig"; sourceTree = "<group>"; };
+		777CD1A4D947EBBDE64820F3 /* Pods-KrygTomaszCVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCVTests/Pods-KrygTomaszCVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9B5CB2554B8FAFA4C83FF3 /* Pods-KrygTomaszCVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrygTomaszCVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrygTomaszCVUITests/Pods-KrygTomaszCVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A7B5DB0FAB7B55F70575FB40 /* Pods_KrygTomaszCVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrygTomaszCVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5D7D42A1DC7E6091F41388 /* Pods_KrygTomaszCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrygTomaszCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		226EC20020E4138E008C6B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D9D0FCC5F54C9DEA3A5300 /* Pods_KrygTomaszCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EC21720E41391008C6B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0836D830A174C5B853A6A4 /* Pods_KrygTomaszCVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EC22220E41391008C6B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDC61F8884DF6F9DDA0A2D3 /* Pods_KrygTomaszCVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226EC1FA20E4138E008C6B3D = {
+			isa = PBXGroup;
+			children = (
+				226EC20520E4138E008C6B3D /* KrygTomaszCV */,
+				226EC21D20E41391008C6B3D /* KrygTomaszCVTests */,
+				226EC22820E41391008C6B3D /* KrygTomaszCVUITests */,
+				226EC20420E4138E008C6B3D /* Products */,
+				FBF65D41CCDE29DFFDF2E69D /* Pods */,
+				B7721ABF77C69EDCA6A1543E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		226EC20420E4138E008C6B3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				226EC20320E4138E008C6B3D /* KrygTomaszCV.app */,
+				226EC21A20E41391008C6B3D /* KrygTomaszCVTests.xctest */,
+				226EC22520E41391008C6B3D /* KrygTomaszCVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		226EC20520E4138E008C6B3D /* KrygTomaszCV */ = {
+			isa = PBXGroup;
+			children = (
+				226EC24120E42900008C6B3D /* Common */,
+				226EC23920E416CD008C6B3D /* Menu */,
+				226EC24820E438C3008C6B3D /* Skills */,
+				226EC20620E4138E008C6B3D /* AppDelegate.swift */,
+				226EC21020E41391008C6B3D /* Assets.xcassets */,
+				226EC21220E41391008C6B3D /* LaunchScreen.storyboard */,
+				226EC21520E41391008C6B3D /* Info.plist */,
+				226EC20D20E4138E008C6B3D /* KrygTomaszCV.xcdatamodeld */,
+			);
+			path = KrygTomaszCV;
+			sourceTree = "<group>";
+		};
+		226EC21D20E41391008C6B3D /* KrygTomaszCVTests */ = {
+			isa = PBXGroup;
+			children = (
+				226EC21E20E41391008C6B3D /* KrygTomaszCVTests.swift */,
+				226EC22020E41391008C6B3D /* Info.plist */,
+			);
+			path = KrygTomaszCVTests;
+			sourceTree = "<group>";
+		};
+		226EC22820E41391008C6B3D /* KrygTomaszCVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				226EC22920E41391008C6B3D /* KrygTomaszCVUITests.swift */,
+				226EC22B20E41391008C6B3D /* Info.plist */,
+			);
+			path = KrygTomaszCVUITests;
+			sourceTree = "<group>";
+		};
+		226EC23920E416CD008C6B3D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				226EC24620E430D2008C6B3D /* Views */,
+				226EC24720E430E6008C6B3D /* ViewModels */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		226EC23E20E41EE1008C6B3D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				226EC23A20E41883008C6B3D /* MenuCVCell.swift */,
+				226EC23B20E41883008C6B3D /* MenuCVCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		226EC24120E42900008C6B3D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				226EC23F20E424D4008C6B3D /* GlobalValues.swift */,
+				226EC24220E42911008C6B3D /* UIView+Extensions.swift */,
+				226EC24420E4297F008C6B3D /* UIColor+Extensions.swift */,
+				226EC24F20E43955008C6B3D /* UIViewController+Extesnions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		226EC24620E430D2008C6B3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				226EC23E20E41EE1008C6B3D /* Cells */,
+				226EC20A20E4138E008C6B3D /* Main.storyboard */,
+				226EC20820E4138E008C6B3D /* MenuVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		226EC24720E430E6008C6B3D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		226EC24820E438C3008C6B3D /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				226EC24A20E438DA008C6B3D /* Views */,
+				226EC24920E438D0008C6B3D /* ViewModels */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		226EC24920E438D0008C6B3D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		226EC24A20E438DA008C6B3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				226EC25120E43B68008C6B3D /* Cells */,
+				226EC24B20E438FB008C6B3D /* SkillsVC.swift */,
+				226EC24C20E438FB008C6B3D /* SkillsVC.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		226EC25120E43B68008C6B3D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				226EC25220E43B96008C6B3D /* SkillCVCell.swift */,
+				226EC25320E43B96008C6B3D /* SkillCVCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B7721ABF77C69EDCA6A1543E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC5D7D42A1DC7E6091F41388 /* Pods_KrygTomaszCV.framework */,
+				A7B5DB0FAB7B55F70575FB40 /* Pods_KrygTomaszCVTests.framework */,
+				2AE07CC6B6D57C940EBAF89F /* Pods_KrygTomaszCVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBF65D41CCDE29DFFDF2E69D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21D4DB2469CECB8328B20222 /* Pods-KrygTomaszCV.debug.xcconfig */,
+				5D5365517EC37C7C4CFEB212 /* Pods-KrygTomaszCV.release.xcconfig */,
+				777CD1A4D947EBBDE64820F3 /* Pods-KrygTomaszCVTests.debug.xcconfig */,
+				14BE16C87E7F642338D655FD /* Pods-KrygTomaszCVTests.release.xcconfig */,
+				0CA37545A556CE94CDBE2671 /* Pods-KrygTomaszCVUITests.debug.xcconfig */,
+				8A9B5CB2554B8FAFA4C83FF3 /* Pods-KrygTomaszCVUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		226EC20220E4138E008C6B3D /* KrygTomaszCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226EC22E20E41391008C6B3D /* Build configuration list for PBXNativeTarget "KrygTomaszCV" */;
+			buildPhases = (
+				C7E11A11B2CBFFA28179145F /* [CP] Check Pods Manifest.lock */,
+				226EC1FF20E4138E008C6B3D /* Sources */,
+				226EC20020E4138E008C6B3D /* Frameworks */,
+				226EC20120E4138E008C6B3D /* Resources */,
+				E9A07821FC25786354B486F1 /* [CP] Embed Pods Frameworks */,
+				EABFA589826D875E3D82791B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KrygTomaszCV;
+			productName = KrygTomaszCV;
+			productReference = 226EC20320E4138E008C6B3D /* KrygTomaszCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		226EC21920E41391008C6B3D /* KrygTomaszCVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226EC23120E41391008C6B3D /* Build configuration list for PBXNativeTarget "KrygTomaszCVTests" */;
+			buildPhases = (
+				679400123238C28FE9441671 /* [CP] Check Pods Manifest.lock */,
+				226EC21620E41391008C6B3D /* Sources */,
+				226EC21720E41391008C6B3D /* Frameworks */,
+				226EC21820E41391008C6B3D /* Resources */,
+				CCD1CDE69400C35898265234 /* [CP] Embed Pods Frameworks */,
+				FC4EAD5F1C77BD60E17CDA81 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				226EC21C20E41391008C6B3D /* PBXTargetDependency */,
+			);
+			name = KrygTomaszCVTests;
+			productName = KrygTomaszCVTests;
+			productReference = 226EC21A20E41391008C6B3D /* KrygTomaszCVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		226EC22420E41391008C6B3D /* KrygTomaszCVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226EC23420E41391008C6B3D /* Build configuration list for PBXNativeTarget "KrygTomaszCVUITests" */;
+			buildPhases = (
+				6EEFEED8F72E0716DA9D7259 /* [CP] Check Pods Manifest.lock */,
+				226EC22120E41391008C6B3D /* Sources */,
+				226EC22220E41391008C6B3D /* Frameworks */,
+				226EC22320E41391008C6B3D /* Resources */,
+				C95D706B488925301FB9C448 /* [CP] Embed Pods Frameworks */,
+				F9BB068BD3AD219C06198F78 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				226EC22720E41391008C6B3D /* PBXTargetDependency */,
+			);
+			name = KrygTomaszCVUITests;
+			productName = KrygTomaszCVUITests;
+			productReference = 226EC22520E41391008C6B3D /* KrygTomaszCVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		226EC1FB20E4138E008C6B3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Kryg Tomasz";
+				TargetAttributes = {
+					226EC20220E4138E008C6B3D = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					226EC21920E41391008C6B3D = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 226EC20220E4138E008C6B3D;
+					};
+					226EC22420E41391008C6B3D = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 226EC20220E4138E008C6B3D;
+					};
+				};
+			};
+			buildConfigurationList = 226EC1FE20E4138E008C6B3D /* Build configuration list for PBXProject "KrygTomaszCV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 226EC1FA20E4138E008C6B3D;
+			productRefGroup = 226EC20420E4138E008C6B3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				226EC20220E4138E008C6B3D /* KrygTomaszCV */,
+				226EC21920E41391008C6B3D /* KrygTomaszCVTests */,
+				226EC22420E41391008C6B3D /* KrygTomaszCVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		226EC20120E4138E008C6B3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EC25520E43B96008C6B3D /* SkillCVCell.xib in Resources */,
+				226EC21420E41391008C6B3D /* LaunchScreen.storyboard in Resources */,
+				226EC24E20E438FB008C6B3D /* SkillsVC.xib in Resources */,
+				226EC23D20E41883008C6B3D /* MenuCVCell.xib in Resources */,
+				226EC21120E41391008C6B3D /* Assets.xcassets in Resources */,
+				226EC20C20E4138E008C6B3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EC21820E41391008C6B3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EC22320E41391008C6B3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		679400123238C28FE9441671 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KrygTomaszCVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EEFEED8F72E0716DA9D7259 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KrygTomaszCVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7E11A11B2CBFFA28179145F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KrygTomaszCV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95D706B488925301FB9C448 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrygTomaszCVUITests/Pods-KrygTomaszCVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCD1CDE69400C35898265234 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrygTomaszCVTests/Pods-KrygTomaszCVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A07821FC25786354B486F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KrygTomaszCV/Pods-KrygTomaszCV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrygTomaszCV/Pods-KrygTomaszCV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EABFA589826D875E3D82791B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrygTomaszCV/Pods-KrygTomaszCV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9BB068BD3AD219C06198F78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrygTomaszCVUITests/Pods-KrygTomaszCVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4EAD5F1C77BD60E17CDA81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrygTomaszCVTests/Pods-KrygTomaszCVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		226EC1FF20E4138E008C6B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EC25420E43B96008C6B3D /* SkillCVCell.swift in Sources */,
+				226EC24320E42911008C6B3D /* UIView+Extensions.swift in Sources */,
+				226EC20920E4138E008C6B3D /* MenuVC.swift in Sources */,
+				226EC23C20E41883008C6B3D /* MenuCVCell.swift in Sources */,
+				226EC20F20E4138E008C6B3D /* KrygTomaszCV.xcdatamodeld in Sources */,
+				226EC24D20E438FB008C6B3D /* SkillsVC.swift in Sources */,
+				226EC24520E4297F008C6B3D /* UIColor+Extensions.swift in Sources */,
+				226EC20720E4138E008C6B3D /* AppDelegate.swift in Sources */,
+				226EC24020E424D4008C6B3D /* GlobalValues.swift in Sources */,
+				226EC25020E43955008C6B3D /* UIViewController+Extesnions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EC21620E41391008C6B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EC21F20E41391008C6B3D /* KrygTomaszCVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226EC22120E41391008C6B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226EC22A20E41391008C6B3D /* KrygTomaszCVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		226EC21C20E41391008C6B3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226EC20220E4138E008C6B3D /* KrygTomaszCV */;
+			targetProxy = 226EC21B20E41391008C6B3D /* PBXContainerItemProxy */;
+		};
+		226EC22720E41391008C6B3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226EC20220E4138E008C6B3D /* KrygTomaszCV */;
+			targetProxy = 226EC22620E41391008C6B3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		226EC20A20E4138E008C6B3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226EC20B20E4138E008C6B3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		226EC21220E41391008C6B3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226EC21320E41391008C6B3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		226EC22C20E41391008C6B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		226EC22D20E41391008C6B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		226EC22F20E41391008C6B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D4DB2469CECB8328B20222 /* Pods-KrygTomaszCV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FMVQ97S47;
+				INFOPLIST_FILE = KrygTomaszCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krygTomasz.KrygTomaszCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		226EC23020E41391008C6B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D5365517EC37C7C4CFEB212 /* Pods-KrygTomaszCV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FMVQ97S47;
+				INFOPLIST_FILE = KrygTomaszCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = krygTomasz.KrygTomaszCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		226EC23220E41391008C6B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777CD1A4D947EBBDE64820F3 /* Pods-KrygTomaszCVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FMVQ97S47;
+				INFOPLIST_FILE = KrygTomaszCVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kryg.KrygTomaszCVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrygTomaszCV.app/KrygTomaszCV";
+			};
+			name = Debug;
+		};
+		226EC23320E41391008C6B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BE16C87E7F642338D655FD /* Pods-KrygTomaszCVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FMVQ97S47;
+				INFOPLIST_FILE = KrygTomaszCVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kryg.KrygTomaszCVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrygTomaszCV.app/KrygTomaszCV";
+			};
+			name = Release;
+		};
+		226EC23520E41391008C6B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA37545A556CE94CDBE2671 /* Pods-KrygTomaszCVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MX7YRK8T35;
+				INFOPLIST_FILE = KrygTomaszCVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kryg.KrygTomaszCVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KrygTomaszCV;
+			};
+			name = Debug;
+		};
+		226EC23620E41391008C6B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9B5CB2554B8FAFA4C83FF3 /* Pods-KrygTomaszCVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MX7YRK8T35;
+				INFOPLIST_FILE = KrygTomaszCVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kryg.KrygTomaszCVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KrygTomaszCV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		226EC1FE20E4138E008C6B3D /* Build configuration list for PBXProject "KrygTomaszCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EC22C20E41391008C6B3D /* Debug */,
+				226EC22D20E41391008C6B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226EC22E20E41391008C6B3D /* Build configuration list for PBXNativeTarget "KrygTomaszCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EC22F20E41391008C6B3D /* Debug */,
+				226EC23020E41391008C6B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226EC23120E41391008C6B3D /* Build configuration list for PBXNativeTarget "KrygTomaszCVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EC23220E41391008C6B3D /* Debug */,
+				226EC23320E41391008C6B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226EC23420E41391008C6B3D /* Build configuration list for PBXNativeTarget "KrygTomaszCVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226EC23520E41391008C6B3D /* Debug */,
+				226EC23620E41391008C6B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		226EC20D20E4138E008C6B3D /* KrygTomaszCV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				226EC20E20E4138E008C6B3D /* KrygTomaszCV.xcdatamodel */,
+			);
+			currentVersion = 226EC20E20E4138E008C6B3D /* KrygTomaszCV.xcdatamodel */;
+			path = KrygTomaszCV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 226EC1FB20E4138E008C6B3D /* Project object */;
+}

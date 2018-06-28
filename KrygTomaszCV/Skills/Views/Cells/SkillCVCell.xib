@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SkillCVCell" customModule="KrygTomaszCV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="216" height="293"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="216" height="293"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khN-hh-LKw">
+                        <rect key="frame" x="8" y="8" width="200" height="277"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQM-MH-uXl" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="8" y="46.5" width="184" height="184"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dQM-MH-uXl" secondAttribute="height" multiplier="1:1" id="EX1-SR-oQm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dQM-MH-uXl" firstAttribute="centerY" secondItem="khN-hh-LKw" secondAttribute="centerY" id="LaS-rj-7Dh"/>
+                            <constraint firstItem="dQM-MH-uXl" firstAttribute="leading" secondItem="khN-hh-LKw" secondAttribute="leading" constant="8" id="TrK-db-3BQ"/>
+                            <constraint firstAttribute="trailing" secondItem="dQM-MH-uXl" secondAttribute="trailing" constant="8" id="sS4-yK-3FK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="khN-hh-LKw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="3lp-Vz-a7v"/>
+                <constraint firstItem="khN-hh-LKw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Jjf-cb-mb3"/>
+                <constraint firstAttribute="trailing" secondItem="khN-hh-LKw" secondAttribute="trailing" constant="8" id="Kzy-vq-Z2c"/>
+                <constraint firstAttribute="bottom" secondItem="khN-hh-LKw" secondAttribute="bottom" constant="8" id="Xbq-av-h0i"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="216" height="293"/>
+            <connections>
+                <outlet property="containerView" destination="khN-hh-LKw" id="AG1-x2-eC2"/>
+                <outlet property="pieChartView" destination="dQM-MH-uXl" id="rq3-Lt-tMd"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="175.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

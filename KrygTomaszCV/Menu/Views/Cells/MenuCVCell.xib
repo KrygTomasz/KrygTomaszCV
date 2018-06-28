@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MenuCVCell" customModule="KrygTomaszCV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="308"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="308"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgj-tn-Wsp">
+                        <rect key="frame" x="8" y="8" width="235" height="292"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tu2-hM-9HV">
+                                <rect key="frame" x="16" y="16" width="203" height="260"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TXT-ez-24i">
+                                        <rect key="frame" x="12" y="0.0" width="179" height="178.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TXT-ez-24i" secondAttribute="height" multiplier="1:1" id="No9-qp-vq7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-em-yfv">
+                                        <rect key="frame" x="80.5" y="178.5" width="42" height="81.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tu2-hM-9HV" firstAttribute="leading" secondItem="Dgj-tn-Wsp" secondAttribute="leading" constant="16" id="4lO-Sj-2C8"/>
+                            <constraint firstAttribute="bottom" secondItem="tu2-hM-9HV" secondAttribute="bottom" constant="16" id="YkD-BC-aob"/>
+                            <constraint firstAttribute="trailing" secondItem="tu2-hM-9HV" secondAttribute="trailing" constant="16" id="jbo-bA-IZI"/>
+                            <constraint firstItem="tu2-hM-9HV" firstAttribute="top" secondItem="Dgj-tn-Wsp" secondAttribute="top" constant="16" id="rIu-3W-qfJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Dgj-tn-Wsp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="0ts-7u-U9U"/>
+                <constraint firstAttribute="bottom" secondItem="Dgj-tn-Wsp" secondAttribute="bottom" constant="8" id="2cA-bN-hwC"/>
+                <constraint firstItem="Dgj-tn-Wsp" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Yu5-Qp-s9r"/>
+                <constraint firstItem="Dgj-tn-Wsp" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="epG-Em-GpI"/>
+                <constraint firstAttribute="trailing" secondItem="Dgj-tn-Wsp" secondAttribute="trailing" constant="8" id="uLz-yZ-TDa"/>
+                <constraint firstItem="Dgj-tn-Wsp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="xZI-gz-AlM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="251" height="308"/>
+            <connections>
+                <outlet property="containerView" destination="Dgj-tn-Wsp" id="nNT-AQ-BxY"/>
+                <outlet property="imageView" destination="TXT-ez-24i" id="x8I-po-iSI"/>
+                <outlet property="titleLabel" destination="lMc-em-yfv" id="Qf2-ZA-3AN"/>
+            </connections>
+            <point key="canvasLocation" x="174.5" y="183"/>
+        </collectionViewCell>
+    </objects>
+</document>
